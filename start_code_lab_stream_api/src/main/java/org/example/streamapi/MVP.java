@@ -10,10 +10,7 @@ public class MVP {
     /*
         Convert a List<String> to an object stream and for each element -> System,out.println.
      */
-//    public static void main(String[] args) {
-//        List<String> names;
 
-//    }
     public void printNames(List<String> names) {
 
         List<String> names1 = List.of("Linda", "Bob", "Ed");
@@ -59,13 +56,9 @@ public class MVP {
      - return sorted List<String>, all caps.
     */
     public List<String> filterByFirstLetterAndOrder(List<String> list, String letter) {
-//       filter list .sort
-//        List<String> newlists = Arrays.stream().
-//        Arrays.stream()
-//        all caps .toUpperCase
-////        certain letters .filter
-//        List <String> strings = Arrays.stream()
-
+//       filter list by a given letter
+//       .sort the list
+//        return animals
     return null;
     }
     /*
@@ -76,8 +69,10 @@ public class MVP {
     public List<String> filterWords(List<String> words, int maxLength, String firstLetter) {
         // Implement me :)
 
-//                if elements < maxlength
+//         if elements < i of maxlength
 //        if given first letter
+//        return elements
 return null;
+    }
 
-    }}
+}
