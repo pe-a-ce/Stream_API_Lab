@@ -13,13 +13,9 @@ public class MVP {
 
     public void printNames(List<String> names) {
 
-        List<String> names1 = List.of("Linda", "Bob", "Ed");
-        List<String> names2 = List.of("Andy");
-        List<String> names3 = List.of("Giovanni", "Antonio", "Giorgio", "Marco");
+//        .streams was not working because i did not put the list name here^^
 
-        System.out.println(names1);
-        System.out.println(names2);
-        System.out.println(names3);
+        names .stream().forEach(System.out::println);
     }
     /*
         Given a List<Integers>, return a List<Integer> with event numbers.
@@ -27,8 +23,6 @@ public class MVP {
     public List<Integer> returnEvenNumbers(List<Integer> numbers) {
         return null;
     }
-
-    List<Integer> evenNumbers = new LinkedList<>();
 
     /*
         Given an int [], double the value of each int and return an int [].
@@ -56,6 +50,7 @@ public class MVP {
      - return sorted List<String>, all caps.
     */
     public List<String> filterByFirstLetterAndOrder(List<String> list, String letter) {
+//        List<String>
 //       filter list by a given letter
 //       .sort the list
 //        return animals
