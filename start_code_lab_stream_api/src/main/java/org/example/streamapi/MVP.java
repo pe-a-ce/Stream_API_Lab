@@ -54,7 +54,15 @@ public class MVP {
 //       filter list by a given letter
 //       .sort the list
 //        return animals
-    return null;
+    return list.stream()
+//            filter animals to start with given letter
+            .filter(animals -> animals.startsWith(letter))
+//            map to upper case
+            .map(String::toUpperCase)
+//            sort list
+            .sorted()
+//            strean to list
+            .toList();
     }
     /*
         Given a list of words, return elements that:
